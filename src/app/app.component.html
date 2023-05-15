@@ -1,5 +1,5 @@
 <div class="container m-5">
-  <h1>{{title}}</h1>
+  <h1>{{ title }}</h1>
   <button (click)="showtxt()" (click)="countclick()" class="btn btn-primary">
     Display details
   </button>
@@ -25,14 +25,14 @@
   <table class="table w-50 table-bordered border-warning">
     <thead class="table-warning">
       <tr>
-        <th scope="col" >Item No.</th>
+        <th scope="col">Item No.</th>
         <th scope="col">Item</th>
       </tr>
     </thead>
     <tbody>
       <tr
         *ngFor="let i of data"
-        [style.background-color]="i.itemno % 5 === 0 ? 'lightblue' : 'beige'" i
+        [style.background-color]="i.itemno % 5 === 0 ? 'lightblue' : 'beige'"
       >
         <th scope="row">{{ i.itemno }}</th>
         <td>{{ i.itemname }}</td>
