@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string= 'AngularAsignemnt1';
+  title:string= 'Parul_AngularAsignemnt1';
   ct:number=0;
   show:boolean=false;
   data:{itemno:number,itemname:string}[]=[];
